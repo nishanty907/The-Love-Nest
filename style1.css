@@ -39,6 +39,7 @@ header .subheading {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 /* Profile Card Styling */
@@ -47,9 +48,10 @@ header .subheading {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 48%; /* Adjust based on your preference */
+    width: 48%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 .profile-card .profile-img {
@@ -97,22 +99,33 @@ header .subheading {
 }
 
 .profile-card a:hover {
-    color:blue;
+    color: #004d99;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .profile-card {
-        width: 100%;
+        width: 90%; /* Full width on smaller screens */
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     .profile-card .profile-img {
-        width: 100%;
+        width: 100%; /* Full width for images */
         height: 250px;
+        border-right: none; /* Remove the border when stacking vertically */
+        border-radius: 10px 10px 0 0; /* Adjust for rounded corners */
     }
 
     .profile-card .profile-details {
         padding: 15px;
+        text-align: center;
     }
 
     header h1 {
