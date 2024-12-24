@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #e91e63; /* Vibrant pink */
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #555;
+    font-size: 2rem;
+    margin: 30px 20px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e91e63;
+}
+
+/* Divider Styling */
+hr {
+    border: none;
+    border-top: 2px solid #e91e63;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    margin: 20px auto;
+}
+
+.image-container img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e91e63;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    max-width: 250px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.1);
+}
+
+/* GIF Styling - Makes GIF responsive */
+.responsive-gif {
+    width: 10%;  /* Make the GIF width responsive */
+    height: ; /* Automatically adjust height to maintain aspect ratio */
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensures it doesn't exceed screen width */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .image-container img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+}
