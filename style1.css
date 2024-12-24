@@ -1,3 +1,10 @@
+/* Apply box-sizing for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -5,7 +12,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding/margin doesn’t overflow */
 }
 
 /* Container Styling */
@@ -53,11 +59,11 @@ header .subheading {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-    box-sizing: border-box; /* Prevent overflow */
+    padding: 0;
 }
 
 .profile-card .profile-img {
-    width: 200px;
+    flex: 0 0 200px; /* Ensures the image takes up 200px */
     height: 200px;
     object-fit: cover;
     border-right: 3px solid #ecf0f1;
@@ -121,7 +127,7 @@ header .subheading {
 
     .profile-card .profile-img {
         width: 100%; /* Full width for images */
-        height: 250px;
+        height: auto; /* Auto height for flexibility */
         border-right: none; /* Remove the border when stacking vertically */
         border-radius: 10px 10px 0 0; /* Adjust for rounded corners */
     }
